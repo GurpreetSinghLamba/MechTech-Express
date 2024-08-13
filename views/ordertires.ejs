@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <body>
+        <%- include('layouts/header') -%>
+
+        <!-- Navigation-->
+        <%- include('layouts/navbar') -%>
+        <!-- Page Header-->
+        <main>
+            <div class="tire-search-container">
+                <h1>Search for Tires</h1>
+                <p>We stock tires for all makes and models. Summer tires, winter tires, and all seasons.</p>
+            
+                <div class="search-box">
+                    <h2>What would you like to search?</h2>
+            
+                    <div class="button-group">
+                        <button id="btn-passenger" class="toggle-btn" onclick="toggleSearch('passenger')">Passenger</button>
+                        <button id="btn-commercial" class="toggle-btn" onclick="toggleSearch('commercial')">Commercial</button>
+                    </div>
+            
+                    <div id="passenger-search" class="search-fields">
+                        <label for="search-type">Search Type</label>
+                        <select id="search-type" onchange="toggleSubSearch(this.value)">
+                            <option value="size">By Tire Size</option>
+                            <option value="vehicle">By Vehicle</option>
+                        </select>
+            
+                        <div id="tire-size-search" class="sub-search-fields">
+                            <label for="width">Width *</label>
+                            <select id="width">
+                                <option value="">- Select -</option>
+                                <option value="175">175 mm</option>
+                                <option value="195">195 mm</option>
+                                <option value="205">205 mm</option>
+                                <option value="225">225 mm</option>
+                            </select>
+            
+                            <label for="profile">Profile *</label>
+                            <select id="profile">
+                                <option value="">- Select -</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                                <option value="70">70</option>
+                                <option value="75">75</option>
+                            </select>
+            
+                            <label for="wheel-size">Wheel Size *</label>
+                            <select id="wheel-size">
+                                <option value="">- Select -</option>
+                                <option value="15">15 inches</option>
+                                <option value="16">16 inches</option>
+                                <option value="17">17 inches</option>
+                                <option value="18">18 inches</option>
+                            </select>
+            
+                            <label for="season">Season *</label>
+                            <select id="season">
+                                <option value="">- Select -</option>
+                                <option value="summer">Summer</option>
+                                <option value="winter">Winter</option>
+                                <option value="all-season">All Season</option>
+                            </select>
+            
+                            <button class="search-btn">Find Your Tires Now</button>
+                        </div>
+            
+                        <div id="vehicle-search" class="sub-search-fields" style="display: none;">
+                            <label for="year">Year *</label>
+                            <select id="year">
+                                <option value="">- Select -</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+            
+                            <label for="make">Make *</label>
+                            <select id="make">
+                                <option value="">- Select -</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="honda">Honda</option>
+                                <option value="ford">Ford</option>
+                                <option value="chevrolet">Chevrolet</option>
+                            </select>
+            
+                            <label for="model">Model *</label>
+                            <select id="model">
+                                <option value="">- Select -</option>
+                                <option value="corolla">Corolla</option>
+                                <option value="civic">Civic</option>
+                                <option value="focus">Focus</option>
+                                <option value="malibu">Malibu</option>
+                            </select>
+            
+                            <label for="trim">Trim *</label>
+                            <select id="trim">
+                                <option value="">- Select -</option>
+                                <option value="base">Base</option>
+                                <option value="sport">Sport</option>
+                                <option value="luxury">Luxury</option>
+                                <option value="premium">Premium</option>
+                            </select>
+            
+                            <label for="vehicle-season">Season *</label>
+                            <select id="vehicle-season">
+                                <option value="">- Select -</option>
+                                <option value="summer">Summer</option>
+                                <option value="winter">Winter</option>
+                                <option value="all-season">All Season</option>
+                            </select>
+            
+                            <button class="search-btn">Find Your Tires Now</button>
+                        </div>
+                    </div>
+            
+                    <div id="commercial-search" class="search-fields" style="display: none;">
+                        <label for="commercial-application">Application *</label>
+                        <select id="commercial-application">
+                            <option value="">- Select -</option>
+                            <option value="truck">Truck</option>
+                            <option value="van">Van</option>
+                            <option value="bus">Bus</option>
+                            <option value="construction">Construction</option>
+                        </select>
+            
+                        <label for="commercial-size">Size *</label>
+                        <select id="commercial-size">
+                            <option value="">- Select -</option>
+                            <option value="225">225 mm</option>
+                            <option value="235">235 mm</option>
+                            <option value="245">245 mm</option>
+                            <option value="265">265 mm</option>
+                        </select>
+            
+                        <label for="commercial-position">Position *</label>
+                        <select id="commercial-position">
+                            <option value="">- Select -</option>
+                            <option value="front">Front</option>
+                            <option value="rear">Rear</option>
+                            <option value="all">All</option>
+                        </select>
+            
+                        <button class="search-btn">Find Your Tires Now</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <%- include('layouts/footer') -%>
+        <!-- Bootstrap core JS-->
+        <%- include('layouts/scripts') -%>
+    </body>
+</html>
+
+
+

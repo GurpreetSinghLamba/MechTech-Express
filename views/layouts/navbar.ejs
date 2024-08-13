@@ -1,0 +1,23 @@
+<header class="header-container">
+    <div class="nav-toggle-flex">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+        </div>
+        <div class="navbar-toggle" id="mobile-menu" aria-label="Toggle Navigation Menu">
+            <img class="hamburger" src="assets/img/hamburger.png" alt="Menu Icon">
+        </div>
+    </div>
+    <nav class="navbar-menu" id="mobile-navbar">
+        <ul>
+            <li><a href="/">HomePage</a></li>
+            <li><a href="/ordertires">Order Tires</a></li>
+            <li><a href="/onlinebooking">Online Booking</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <% if (!loggedIn) { %>
+                <li><a href="/login">Login</a></li>
+                <% } else { %>
+                    <li><a href="/logout">Logout</a></li>
+                    <% } %>
+        </ul>
+    </nav>
+</header>

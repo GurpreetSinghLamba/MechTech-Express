@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layouts/header') -%>
+    <body>
+        <!-- Navigation-->
+        <%- include('layouts/navbar') -%>
+        <!-- Page Header-->
+        <div class="container">
+          <main>
+            <div class="home-container">
+              <div class="hero-img">
+                <img src="assets/img/bg_car.jpg" alt="Hero Image" class="background-image" />
+                <div class="hero-img-content">
+                  <% if (loggedIn) { %>
+                    <span class="book-service">Welcome, <%= username %> !!</span>
+                  <% } else { %>
+                    <span class="book-service">Welcome</span>
+                  <% } %>
+                  <span class="book-service">Book Your Services</span>
+                  <div class="hero-img-btn">
+                    <a href="/onlinebooking"><button>Book Online</button></a>
+                    <a href="/ordertires"><button>Order Tires</button></a>
+                  </div>
+                </div>
+              </div>
+      
+              <hr />
+              <div class="home-content">
+                <div class="order-new-tire">
+                  <span>Order New Tires</span>
+                  <span>Order your new tires from the comfort of your home. Click the button below to get started!</span>
+                  <button>Order Tires</button>
+                </div>
+                <hr />
+                <div class="mobile-content">
+                  <span class="mobile-content-span1"
+                    >Mobile Tire Repair, Maintenance, and Installation in Kitchener Waterloo and Cambridge</span
+                  >
+                  <p>
+                    Welcome to Mectec Express, we are a premier mobile tire installation, repair, and tire maintenance service in the KW area, we bring the tire shop to you!
+                  </p>
+                  <span class="mobile-content-span2"
+                    >We service all makes and models, from luxury cars to family vehicles.</span
+                  >
+                  <div class="slider">
+                    <img
+                      src="assets/img/aud.jpg"
+                      alt="Tire Image"
+                    />
+                    <img
+                      src="assets/img/bmw.jpg"
+                      alt="Tire Image"
+                    />
+                    <img
+                      src="assets/img/cadillac.png"
+                      alt="Tire Image"
+                    />
+                    <img
+                      src="assets/img/merc.jpg"
+                      alt="Tire Image"
+                    />
+                  </div>
+                  <div class="img-content">
+                    <img
+                      src="assets/img/gift.jpg"
+                      alt="Tire Image"
+                    />
+                    <div class="img-content-right">
+                      <span>Gift Cards</span>
+                      <p>Send a gift card to friends and family or buy it now for your future use.</p>
+                      <button>Buy Now</button>
+                    </div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card">
+                      <div class="card-content">
+                        <img
+                          src="assets/img/review.jpg"
+                          alt="Reviewer Image"
+                        />
+                        <div class="stars">★★★★★</div>
+                        <div class="review-content">
+                          <p>
+                            This is a fantastic product! I have been using it for a few weeks now and it has exceeded my
+                            expectations. Highly recommended!
+                          </p>
+                        </div>
+                        <div class="review-footer">
+                          <span class="review-date">June 10, 2024</span>
+                          <button class="review-button">Read Full Review</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-content">
+                        <img
+                          src="assets/img/review2.jpg"
+                          alt="Reviewer Image"
+                        />
+                        <div class="stars">★★★★★</div>
+                        <div class="review-content">
+                          <p>
+                            This is a fantastic product! I have been using it for a few weeks now and it has exceeded my
+                            expectations. Highly recommended!
+                          </p>
+                        </div>
+                        <div class="review-footer">
+                          <span class="review-date">June 10, 2024</span>
+                          <button class="review-button">Read Full Review</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-content">
+                        <img
+                          src="assets/img/review3.jpg"
+                          alt="Reviewer Image"
+                        />
+                        <div class="stars">★★★★★</div>
+                        <div class="review-content">
+                          <p>
+                            This is a fantastic product! I have been using it for a few weeks now and it has exceeded my
+                            expectations. Highly recommended!
+                          </p>
+                        </div>
+                        <div class="review-footer">
+                          <span class="review-date">June 10, 2024</span>
+                          <button class="review-button">Read Full Review</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-content">
+                        <img
+                          src="assets/img/review4.jpg"
+                          alt="Reviewer Image"
+                        />
+                        <div class="stars">★★★★★</div>
+                        <div class="review-content">
+                          <p>
+                            This is a fantastic product! I have been using it for a few weeks now and it has exceeded my
+                            expectations. Highly recommended!
+                          </p>
+                        </div>
+                        <div class="review-footer">
+                          <span class="review-date">June 10, 2024</span>
+                          <button class="review-button">Read Full Review</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          </div>
+        <!-- Footer-->
+        <%- include('layouts/footer') -%>
+        <!-- Bootstrap core JS-->
+        <%- include('layouts/scripts') -%>
+    </body>
+</html>

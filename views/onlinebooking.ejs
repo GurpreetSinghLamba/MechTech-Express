@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <%- include('layouts/header') -%>
+
+    <!-- Navigation-->
+    <%- include('layouts/navbar') -%>
+      <!-- Page Header-->
+      <main>
+        <div class="online-booking-container">
+          <div class="booking-container">
+            <h2>Online Booking Services</h2>
+    
+            <div class="service-row">
+              <h3 class="service-heading">FLAT TIRE REPAIR</h3>
+              <span class="arrow">▼</span>
+              <p>Price varies CA$50・ 30 min</p>
+              <div class="dropdown">
+                <p><strong>Description: </strong>  Our mobile tire changing service can replace your flat tire with a spare, fill your tires up with air, patch repairable tires, or get you a new tire, so you can get where you need to go. Our tire shop is fully equipped with state-of-the-art machines that won’t damage your wheels.</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">Bolt-on Service</h3>
+              <span class="arrow">▼</span>
+              <p>Price varies CA$130・ 30 min+</p>
+              <div class="dropdown">
+                <p>Description: Change the factory installed part as per the requirement.</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">Delivery</h3>
+              <span class="arrow">▼</span>
+              <p>Price Varies CA$60 ・ 15 min</p>
+              <div class="dropdown">
+                <p>Description: The delivery of your tires will be done via truck in between 9am to 8pm.</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">Towing</h3>
+              <span class="arrow">▼</span>
+              <p>Price varies: CA$150.99 ・ 30 min</p>
+              <div class="dropdown">
+                <p>Description: Towing service</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">Seasonal TIRE MOUNTING & BALANCING</h3>
+              <span class="arrow">▼</span>
+              <p>Price varies CA$150・ 1 hr 30 min</p>
+              <div class="dropdown">
+                <p>Description: Your winter and summer tires share the same set of wheels. Changeover, mount, and balance of 14-20 inch tires, off rim. Non-storage.</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">Storage</h3>
+              <span class="arrow">▼</span>
+              <p>Price Varies: CA$89.99 ・ 10 min</p>
+              <div class="dropdown">
+                <p>Description: Storage of your tires for one season</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">TPMS Sensor</h3>
+              <span class="arrow">▼</span>
+              <p>Price Varies: CA$45.00 ・ 30 min</p>
+              <div class="dropdown">
+                <p>Description: This includes diagnosing your TPMS system and the replacement of one sensor. Each extra sensor is charged at an additional CA$85 per sensor.</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">Battery Service</h3>
+              <span class="arrow">▼</span>
+              <p>Price Varies: CA$60.00 ・ 30 min</p>
+              <div class="dropdown">
+                <p>Description: Let us come to you! Mobile Tyre Battery Service will boost your dead battery and get you back on the road.</p>
+              </div>
+            </div>
+    
+            <div class="service-row">
+              <h3 class="service-heading">Mobile Refueling</h3>
+              <span class="arrow">▼</span>
+              <p>Price Varies: CA$60.00 ・ 30 min</p>
+              <div class="dropdown">
+                <p>Description: This service includes 10L of fuel.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="appointment-summary">
+            <h2>Booking Summary</h2>
+            <div id="service-list" class="service-list"></div>
+            <button id="next-btn">Next</button>
+          </div>
+      </main>
+      <!-- Footer-->
+      <%- include('layouts/footer') -%>
+        <!-- Bootstrap core JS-->
+        <%- include('layouts/scripts') -%>
+</body>
+
+</html>

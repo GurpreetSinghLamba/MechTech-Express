@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <body>
+        <%- include('layouts/header') -%>
+
+        <!-- Navigation-->
+        <%- include('layouts/navbar') -%>
+        <!-- Page Header-->
+        <main class="checkout-container">
+            <h2>Checkout</h2>
+            <div class="checkout-summary">
+                <h3>Your Selected Services</h3>
+                <div id="selected-services" class="selected-services-list"></div>
+            </div>
+            <div class="checkout-details">
+                <h3>Enter Your Details</h3>
+                <form id="checkout-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+    
+                    <button type="submit" class="confirm-btn">Confirm Booking</button>
+                </form>
+            </div>
+        </main>
+        <!-- Footer-->
+        <%- include('layouts/footer') -%>
+        <!-- Bootstrap core JS-->
+        <%- include('layouts/scripts') -%>
+    </body>
+</html>
+
